@@ -1,0 +1,21 @@
+{
+    "name": "fasterwebsite/perf-utils",
+    "description": "Performance utilities",
+    "type": "library",
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.96",
+        "phpunit/phpunit": "^9.5"
+    },
+    "authors": [
+        {
+            "name": "Matt Klepaczewski",
+            "email": "matt@fasterwebsite.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "fasterwebsite\\perf\\utils\\": "src/"
+        }
+    },
+    "require": {}
+}
