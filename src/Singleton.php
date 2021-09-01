@@ -9,6 +9,9 @@ declare(strict_types=1);
 namespace fasterwebsite\perf\utils;
 
 trait Singleton {
+    /**
+     * @var static
+     */
     protected static $instance;
 
     /**

@@ -60,7 +60,7 @@ class CacheStats {
     }
 
     /**
-     * @return array<string, array<string, int>>
+     * @return array<string, array<string, array<string, int>>>
      */
     public function getTickers(): array {
         return $this->tickers;

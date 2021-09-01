@@ -14,8 +14,14 @@ use Closure;
 class PerfHelper {
     use Singleton;
 
+    /**
+     * @var array<string, float>
+     */
     private array $timers;
 
+    /**
+     * @var array<string, float>
+     */
     private array $activeTimers;
 
     /**
@@ -51,7 +57,7 @@ class PerfHelper {
     }
 
     /**
-     * @return array
+     * @return array<string, float>
      */
     public function getTimers(): array {
         return $this->timers;
