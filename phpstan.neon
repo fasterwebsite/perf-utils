@@ -1,0 +1,15 @@
+#$ composer update --optimize-autoloader
+#$ vendor/bin/phpstan analyze
+
+includes:
+    # @see https://github.com/phpstan/phpstan-src/blob/master/conf/bleedingEdge.neon
+    - phar://phpstan.phar/conf/bleedingEdge.neon
+parameters:
+    level: max
+    reportUnmatchedIgnoredErrors: false
+    inferPrivatePropertyTypeFromConstructor: true
+    typeAliases:
+    paths:
+        - %currentWorkingDirectory%/src/
+    ignoreErrors:
+         - '#Unsafe usage of new static\(\)\.#'
